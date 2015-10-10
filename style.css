@@ -2,7 +2,7 @@ h1 {
 	color: #004169;
 	text-align: center;
 	font-family: 'Cuprum', sans-serif;
-    font-size: 50px;
+  font-size: 50px;
 }
 
 h5 {
@@ -26,8 +26,27 @@ p {
   font-size: 20px;
 }
 
-#add {
+#main-page-body{
+  background-image:url('./photo.jpg');
+  height: 500px;
+  opacity: 0.3;
+}
 
+#main-page-text{
+  position: relative;
+  top: -450px;
+}
+
+#results, #title{
+  margin-left: 40px;
+}
+
+#about-linkbuddy{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#add {
 	text-align: left;
 }
 
@@ -46,15 +65,8 @@ button a {
 	float: right;
 }
 
-button {
+/*button {
   background: #E0E0E0;
-  /*background-image: -webkit-linear-gradient(top, #00ffff, #004169);
-  background-image: -moz-linear-gradient(top, #00ffff, #004169);
-  background-image: -ms-linear-gradient(top, #00ffff, #004169);
-  background-image: -o-linear-gradient(top, #00ffff, #004169);
-  background-image: linear-gradient(to bottom, #00ffff, #004169);
-  -webkit-border-radius: 3;
-  -moz-border-radius: 3;*/
   border-radius: 5px;
   font-family: 'Cuprum', sans-serif;
   color: #ffffff;
@@ -63,14 +75,4 @@ button {
   border: solid #000000 3px;
   text-decoration: none;
   margin: 5px
-}
-
-button.hover {
-  background: #2e29ad;
-  background-image: -webkit-linear-gradient(top, #2e29ad, #00ffa2);
-  background-image: -moz-linear-gradient(top, #2e29ad, #00ffa2);
-  background-image: -ms-linear-gradient(top, #2e29ad, #00ffa2);
-  background-image: -o-linear-gradient(top, #2e29ad, #00ffa2);
-  background-image: linear-gradient(to bottom, #2e29ad, #00ffa2);
-  text-decoration: none;
-}
+}*/
