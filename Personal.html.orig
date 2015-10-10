@@ -23,8 +23,13 @@
 </head>
 
 <body>
-    <h1>School</h1>
-    <p>School Stuff</h1>
+<<<<<<< HEAD
+    <h1 id="title">Personal</h1>
+    <p>Personal stuff</p>
+    <div id="results">
+    </div>
+</body>
+=======
     <div class="container-fluid">
         <h1>Prototype</h1>
         <div class="row">
@@ -32,8 +37,9 @@
           <button id="AO"><a href="./index.html" role="button"  align="center">Home</a></button>
         </div>
 <!--header end-->
+>>>>>>> 05e1cda499373b2893f09ad7a824176cf212e5fa
 
-<h2>School Links</h2>
+<h2>Personal Links</h2>
 
 </body>
 </html>

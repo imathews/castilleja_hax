@@ -26,30 +26,33 @@
     <div class="container-fluid">
         <h1>Prototype</h1>
         <div class="row">
-          
-          <a class="btn btn-default" href="./index.html" role="button">Home</a>
+          <button id="AO"><a href="./index.html" role="button"  align="right">Home</a></button>
           </div>
 
 <!--header end-->
+      <div id="add-link-div">
+        <div class="form-group">
+          <label for="catagory">Link</label>
+          <select class="form-control" id="catagory">
+            <option value="Personal">Personal</option>
+            <option value="School">School</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
 
-          <!-- <form> -->
-      <div class="form-group">
-        <label for="catagory">Catagory</label>
-        <input type="catagory" class="form-control" id="catagory" placeholder="Catagory">
+        <div class="form-group">
+          <label for="link">Link</label>
+          <input type="link" class="form-control" id="link" placeholder="Link">
+        </div>
+
+        <div class="form-group">
+          <label for="link-name">Link Name</label>
+          <input type="link-name" class="form-control" id="link-name" placeholder="Link Name">
+        </div>
+
+        <button type="submit" id="submitNewLink" class="btn btn-default">Submit</button>
+        </form>
       </div>
-
-      <div class="form-group">
-        <label for="link">Link</label>
-        <input type="link" class="form-control" id="link" placeholder="Link">
-      </div>
-
-      <div class="form-group">
-        <label for="link-name">Link Name</label>
-        <input type="link-name" class="form-control" id="link-name" placeholder="Link Name">
-      </div>
-
-      <button type="submit" id="submitNewLink" class="btn btn-default">Submit</button>
-    </form>
 
 
       </body>

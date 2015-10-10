@@ -23,7 +23,20 @@
 </head>
 
 <body>
-    <div>
-        <h1>School</h1>
-        
+<<<<<<< HEAD
+    <h1>School</h1>
+    <p>School Stuff</h1>
+=======
+    <div class="container-fluid">
+        <h1>Prototype</h1>
+        <div class="row">
+          <button id="AO"><a href="./link.html" role="button"  align="right">Add Link</a></button>
+          <button id="AO"><a href="./index.html" role="button"  align="center">Home</a></button>
+        </div>
+<!--header end-->
+
+<h2>School Links</h2>
+>>>>>>> 05e1cda499373b2893f09ad7a824176cf212e5fa
+
 </body>
+</html>
