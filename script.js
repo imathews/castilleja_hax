@@ -1,12 +1,17 @@
-castiHax.initTeam('Ian&Sierra', function(){
+castiHax.initTeam('TSwiftYoungBlood', function(){
 
-	castiHax.set({hello: 'worldyyy'}, function(err){
-
+	castiHax.getAll(function(res){
+		console.log(res);
 	});
+	castiHax.set({ian: 'mathews'}, function(val){
+		console.log(val);
+	})
+	castiHax.onSet(function(val){
+		console.log(val);
+	})
 	$('#submit').on('click', function(){
 		console.log($('#email').val());
 		castiHax.set({email: $('#email').val()});
-	})
-
+	});
 });
 
