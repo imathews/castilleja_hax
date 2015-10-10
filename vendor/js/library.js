@@ -1,43 +1,45 @@
-window.castaHacks = {};
+window.castiHax = {};
 
 var domain = 'http://staging.redivis.com';
+//var domain = 'http://localhost:8080';
 var onSocketLoadQueue = [];
-
+var teamName;
+var socket;
 var emptyFn = function(){};
-var socket = io.connect(domain + '/team1');
 
-socket.on('connect', function(){
-	console.log('Connected to server...');
-	onSocketLoadQueue.forEach(function(fn){fn();});
-	onSocketLoadQueue.length = 0;
-});
 
-function onSocketLoad(fn){
-	if (socket.connected){
-		fn();
-	}
-	else{
-		onSocketLoadQueue.push(fn);
-	}
-}
+castiHax.initTeam = function(name, cb){
+	teamName = name;
+	var initSocket = io.connect(domain + '/init').on('connect', function(){
+		initSocket.emit('setTeamName', name, function(){
+			socket = io.connect(domain + '/'+teamName).on('connect', function(){
+				cb();
+			})
+		})
 
-castaHacks.set = function(obj, cb){
-	cb = cb || emptyFn;
-	onSocketLoad(function(){
-		socket.emit('set', obj, cb);
 	});
 };
 
-castaHacks.get = function(key, cb){
+castiHax.set = function(obj, cb){
 	cb = cb || emptyFn;
-	onSocketLoad(function(){
-		socket.emit('get', key, cb);
+	socket.emit('set', obj, function(err, res){
+		if (err) console.error(err);
+		cb(res);
 	});
 };
 
-castaHacks.delete = function(key, cb){
+castiHax.get = function(key, cb){
 	cb = cb || emptyFn;
-	onSocketLoad(function(){
-		socket.emit('delete', key, cb);
+	socket.emit('get', key, function(err, res){
+		if (err) console.error(err);
+		cb(res);
+	});
+};
+
+castiHax.delete = function(key, cb){
+	cb = cb || emptyFn;
+	socket.emit('delete', key, function(err, res){
+		if (err) console.error(err);
+		cb(res);
 	});
 };

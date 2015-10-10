@@ -1,3 +1,7 @@
-castaHacks.set({test: 'world'}, function(){
-	console.log(arguments);
+castiHax.initTeam('Ian&Sierra', function(){
+
+	castiHax.set({hello: 'world'}, function(err){
+
+	});
 })
+
