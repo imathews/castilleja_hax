@@ -45,7 +45,7 @@ castiHax.initTeam('TeamEKM', function(){
 			for (i = 0; i < res.length; i++) { 
     			var name = res[i][0]
     			var link = res[i][1]
-    			document.getElementById('results').innerHTML += "<div class='row'><div class='col-sm-3'>" + name + " - <a href='" + link + "'>" + link + "</a></div><div class='col-sm-4'><a class='del' id='" + i + "'>Delete</a></div></div>";
+    			document.getElementById('results').innerHTML += "<div class='row'><div class='col-sm-3'>" + name + " - <a href='http://www." + link + "'>" + link + "</a></div><div class='col-sm-4'><a class='del' id='" + i + "'>Delete</a></div></div>";
     			$('.del').on('click', function(object){
     				console.log("delete")
     				console.log(object.target.id)
