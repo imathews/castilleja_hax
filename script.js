@@ -45,7 +45,7 @@ castiHax.initTeam('TeamEKM', function(){
 			for (i = 0; i < res.length; i++) { 
     			var name = res[i][0]
     			var link = res[i][1]
-    			document.getElementById('results').innerHTML += "<div>" + name + " - <a href='" + link + "'>" + link + "</a></div>";
+    			document.getElementById('results').innerHTML += "<div>" + name + " - <a href='" + link + "'>" + link + "</a><a>Delete</a></div>";
 			}
 		});
 
