@@ -1,0 +1,78 @@
+h1 {
+	color: #004169;
+	text-align: center;
+	font-family: 'Cuprum', sans-serif;
+  font-size: 50px;
+}
+
+h5 {
+	color: #004169;
+	text-align: left;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 30px;
+}
+
+h2 {
+  color: #004169;
+  text-align: center;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+}
+
+p {
+  color: #004169;
+  text-align: center;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 20px;
+}
+
+#main-page-body{
+  background-image:url('./photo.jpg');
+  height: 500px;
+  opacity: 0.3;
+}
+
+#main-page-text{
+  position: relative;
+  top: -450px;
+}
+
+#results, #title{
+  margin-left: 40px;
+}
+
+#about-linkbuddy{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#add {
+	text-align: left;
+}
+
+button a {
+	color: #ffffff;
+}
+
+#add-link-div {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#AO {
+
+	float: right;
+}
+
+/*button {
+  background: #E0E0E0;
+  border-radius: 5px;
+  font-family: 'Cuprum', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 13px 22px 14px 22px;
+  border: solid #000000 3px;
+  text-decoration: none;
+  margin: 5px
+}*/
