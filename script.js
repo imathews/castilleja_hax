@@ -1,6 +1,6 @@
 castiHax.initTeam('Ian&Sierra', function(){
 
-	castiHax.set({hello: 'world'}, function(err){
+	castiHax.set({hello: 'ian'}, function(err){
 
 	});
 })
