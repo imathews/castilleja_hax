@@ -20,12 +20,12 @@ castiHax.initTeam('TeamEKM', function(){
 			request = {}
 			var vals = []
 			if (res !== null) {
-			  alert(res);
 			  vals = res;
 			} 
 			vals.push([linkName, link]);
 			request[category] = vals;
 			castiHax.set(request);
+			alert("Congratulations! You have sucessfully added a link");
 		});
 
 
