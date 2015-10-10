@@ -2,11 +2,9 @@ window.castiHax = {};
 
 var domain = 'http://staging.redivis.com';
 //var domain = 'http://localhost:8080';
-var onSocketLoadQueue = [];
 var teamName;
 var socket;
 var emptyFn = function(){};
-
 
 castiHax.initTeam = function(name, cb){
 	teamName = name;
@@ -14,9 +12,8 @@ castiHax.initTeam = function(name, cb){
 		initSocket.emit('setTeamName', name, function(){
 			socket = io.connect(domain + '/'+teamName).on('connect', function(){
 				cb();
-			})
-		})
-
+			});
+		});
 	});
 };
 
