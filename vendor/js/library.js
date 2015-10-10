@@ -1,27 +1,12 @@
 window.castiHax = {};
 
-//var domain = 'http://staging.redivis.com';
-var domain = 'http://localhost:8080';
+var domain = 'http://staging.redivis.com';
+//var domain = 'http://localhost:8080';
 var onSocketLoadQueue = [];
 var teamName;
 var socket;
 var emptyFn = function(){};
 
-
-//socket.on('connect', function(){
-//	console.log('Connected to server...');
-//	onSocketLoadQueue.forEach(function(fn){fn();});
-//	onSocketLoadQueue.length = 0;
-//});
-//
-//function onSocketLoad(fn){
-//	if (socket.connected){
-//		fn();
-//	}
-//	else{
-//		onSocketLoadQueue.push(fn);
-//	}
-//}
 
 castiHax.initTeam = function(name, cb){
 	debugger;
