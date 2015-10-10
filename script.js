@@ -33,7 +33,11 @@ castiHax.initTeam('TeamEKM', function(){
 
 
 	$(document).ready ( function(){
-		var category =  document.getElementById("title").innerHTML;
+		var categoryElement =  document.getElementById("title");
+		if (categoryElement == null) {
+			return
+		}
+		var category = categoryElement.innerHTML
 		console.log(category)
 
 		castiHax.get(category, function(res){
