@@ -9,7 +9,6 @@ var emptyFn = function(){};
 
 
 castiHax.initTeam = function(name, cb){
-	debugger;
 	teamName = name;
 	var initSocket = io.connect(domain + '/init').on('connect', function(){
 		initSocket.emit('setTeamName', name, function(){
