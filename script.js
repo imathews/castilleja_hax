@@ -31,5 +31,21 @@ castiHax.initTeam('TeamEKM', function(){
 
 	});
 
+
+	$(document).ready ( function(){
+		var category =  document.getElementById("title").innerHTML;
+		console.log(category)
+
+		castiHax.get(category, function(res){
+			console.log(res)
+			for (i = 0; i < res.length; i++) { 
+    			var name = res[i][0]
+    			var link = res[i][1]
+    			document.getElementById('results').innerHTML += "<div>" + name + "</div>";
+			}
+		});
+
+
+	});
 });
 
